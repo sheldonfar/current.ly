@@ -11,7 +11,7 @@ const store = configureStore();
 ReactDOM.render(
     <Provider store={store} >
         <ConnectedRouter history={history}>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <App />
             </BrowserRouter>
         </ConnectedRouter>

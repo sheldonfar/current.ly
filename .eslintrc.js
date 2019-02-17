@@ -24,6 +24,8 @@ module.exports = {
         sourceType: "module"
     },
     rules: {
+        'react/jsx-no-bind': 'off',
+        'react/no-children-prop': 'off',
         'react/forbid-component-props': 'off',
         'react/jsx-max-depth': 'off',
         'react/prop-types': [2, {

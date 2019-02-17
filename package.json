@@ -2,10 +2,11 @@
   "name": "currently",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sheldonfar.github.io/current.ly/",
+  "homepage": "https://sheldonfar.github.io/currently",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
+    "classnames": "^2.2.6",
     "connected-react-router": "^6.3.1",
     "gh-pages": "^2.0.1",
     "history": "^4.7.2",
@@ -22,11 +23,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && copy build\\index.html build\\404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --cache --report-unused-disable-directives && echo \"eslint: no lint errors\"",
-    "lint:fix": "eslint . --cache --fix && echo \"eslint: no lint errors\""
+    "lint": "eslint src --color --format table --ext js,jsx && echo \"eslint: no lint errors\"",
+    "lint:fix": "npm run lint -- --fix"
   },
   "browserslist": [
     ">0.2%",
@@ -39,6 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheldonfar/current.ly.git"
+    "url": "https://github.com/sheldonfar/currently.git"
   }
 }

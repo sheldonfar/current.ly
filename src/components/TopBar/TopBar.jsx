@@ -101,21 +101,21 @@ const TopBar = ({ classes }) => {
                       noWrap
                       variant="h6"
                   >
-                    Current.ly
+                      {'Currently'}
                   </Typography>
               </Toolbar>
           </AppBar>
           <Drawer
-              classes={{
-                  paper: classNames({
-                    [classes.drawerOpen]: sideMenuOpen,
-                    [classes.drawerClose]: !sideMenuOpen,
-                  }),
-                }}
               className={classNames(classes.drawer, {
-                  [classes.drawerOpen]: sideMenuOpen,
+                [classes.drawerClose]: !sideMenuOpen,
+                [classes.drawerOpen]: sideMenuOpen,
+              })}
+              classes={{
+                paper: classNames({
                   [classes.drawerClose]: !sideMenuOpen,
-                })}
+                  [classes.drawerOpen]: sideMenuOpen,
+                }),
+              }}
               open={sideMenuOpen}
               variant="permanent"
           >
@@ -126,7 +126,7 @@ const TopBar = ({ classes }) => {
               </div>
               <Divider />
               <List>
-                  <Route children={({ location }) => Object.values(Applications).map(application => (
+                  <Route children={() => Object.values(Applications).map(application => (
                       <Link
                           key={application.label}
                           to={application.route}

@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-class Wykop extends Component {
+class Telegram extends Component {
   shouldComponentUpdate() {
     return true;
   }
@@ -10,7 +10,7 @@ class Wykop extends Component {
   render() {
     return (
         <div>
-               {'WYKOP MAIN PART'}
+               {'Telegram MAIN PART1234'}
         </div>
     );
   }
@@ -30,4 +30,4 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(
   mapStateToProps,
-)(Wykop);
+)(Telegram);

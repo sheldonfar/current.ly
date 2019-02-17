@@ -1,4 +1,6 @@
-Franz-like application to store all of my news applications in one place
+Franz-like application to store all of my news applications in one place.
+
+Demo: https://sheldonfar.github.io/currently/
 
 ## Available Scripts
 
