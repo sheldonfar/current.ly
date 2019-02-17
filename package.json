@@ -2,10 +2,12 @@
   "name": "currently",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sheldonfar.github.io/current.ly/",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "connected-react-router": "^6.3.1",
+    "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
