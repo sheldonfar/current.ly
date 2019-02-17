@@ -1,1 +1,1 @@
-export { default } from './Wykop'
+export { default } from './Wykop.jsx';

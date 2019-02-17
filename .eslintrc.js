@@ -6,6 +6,9 @@ module.exports = {
         "node": true,
         "mocha": true
     },
+    "plugins": [
+        "react"
+      ],
     "extends": [
         'airbnb-base',
         'plugin:react/all'
@@ -19,5 +22,15 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 7,
         sourceType: "module"
-    }
+    },
+    rules: {
+        'react/forbid-component-props': 'off',
+        'react/jsx-max-depth': 'off',
+        'react/prop-types': [2, {
+            ignore: [
+                'classes',
+            ],
+        }],
+        'class-methods-use-this': 'off',
+    },
 }
